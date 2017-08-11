@@ -1,5 +1,5 @@
-function [outI] = myAHEcdf(inI,n,cdf)
-%MYAHECDF helper of clahe, same as AHE, but 
+function [outI] = udionAHEcdf(inI,n,cdf)
+%udionAHEcdf helper of clahe, same as AHE, but 
 %uses given cdf
 %   Detailed explanation goes here
     [h,w] = size(inI);
@@ -14,7 +14,7 @@ function [outI] = myAHEcdf(inI,n,cdf)
             highj = min(w,j+p_);
             
             tile = inI(lowi:highi, lowj:highj);      
-            HEtile = myHEcdf(tile,cdf);
+            HEtile = udionHEcdf(tile,cdf);
             [hh,ww] = size(HEtile);
             if i<=p
                 x=i;

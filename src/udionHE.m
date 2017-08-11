@@ -1,5 +1,5 @@
-function [outI] = myHE( inI )
-%MYHE Summary of this function goes here
+function [outI] = udionHE( inI )
+%udionHE Summary of this function goes here
 %   Detailed explanation goes here
     [counts, binLocs] = imhist(inI);
     cdf = cumsum(counts)/sum(counts);

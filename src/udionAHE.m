@@ -1,5 +1,5 @@
-function [outI] = myAHE(inI, n)
-%MYAHE implements the AHE algo, by 
+function [outI] = udionAHE(inI, n)
+%udionAHE implements the AHE algo, by 
 %iterating over all pixels
 %   Detailed explanation goes here
     [h,w] = size(inI);
@@ -14,7 +14,7 @@ function [outI] = myAHE(inI, n)
             highj = min(w,j+p_);
             
             tile = inI(lowi:highi, lowj:highj);      
-            HEtile = myHE(tile);
+            HEtile = udionHE(tile);
             [hh,ww] = size(HEtile);
             if i<=p
                 x=i;

@@ -1,5 +1,5 @@
-function [counts_out, binLocs_out] = myClip(counts, binLocs, thresh)
-%MYCLIP helps in clahe, clips the given histogram
+function [counts_out, binLocs_out] = udionClip(counts, binLocs, thresh)
+%udionCLIP helps in clahe, clips the given histogram
 %according to prescription given in clahe algo 
 %   Detailed explanation goes here
     binLocs_out = binLocs;
